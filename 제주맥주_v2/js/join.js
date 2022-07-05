@@ -44,7 +44,6 @@ $(() => { /////////////// jQB /////////////////////
       // groSpace에 cv 값을 받으면 cv라고 전달된 값을 replace를 해서 내보내(\s스페이스문자를 다 찾아서g 전부다 비워)
 
 
-
       // 방금 blur한 요소의 아이디
       let cid = $(this).attr('id');
       // cid 는 current id 즉, 현재 아이디
