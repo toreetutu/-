@@ -60,7 +60,7 @@
 
 /* 서브밋(ID/PW 회원가입) 버튼 */
 .btnbx {
-  width: 400px;
+  /* width: 400px; */
   height: 45px;
   border: 1px solid #cecece;
 
@@ -111,7 +111,7 @@
 
 /* 서브밋(카카오 로그인) 버튼 */
 .lbx {
-  width: 400px;
+  /* width: 400px; */
   height: 45px;
   border: 1px solid #ffeb00;
 
@@ -139,7 +139,7 @@
   width: 20px;
   height: 20px;
   margin-top: 13px;
-  margin-left: -12rem;
+  margin-left: 10px;
   /* svg는 코드로 된 벡터 이미지기 때문에 
   svg파일을 vscode에서 열면 보이는 코드를 
   복사해 background-image로 넣음 
@@ -230,7 +230,7 @@
 
 
   /* 로그인박스: 로그인~비회원주문조회 */
-  .loginBox {
+  .loginBox  {
     width: min(max(100%), 400px);
   }
 

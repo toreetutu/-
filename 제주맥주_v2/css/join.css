@@ -45,7 +45,7 @@ select:focus {
     /* outline: 1px solid green; */
 }
 
-/* 메시지 글자색 변경 */
+/* 메시지 글자색 변경: 값이 true 조건에 알맞게 넣었을때 */
 .msg.on {
     color: green;
 }
