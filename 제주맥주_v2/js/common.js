@@ -96,19 +96,19 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log("ID/PW 회원가입:", txt);
 
     // 3. 분기하기
-    let url;
-    switch (txt) {
-      case "ID/PW 회원가입":
-        url = "join";
-        break;
+    // let url;
+    // switch (txt) {
+    //   case "ID/PW 회원가입":
+    //     url = "join";
+    //     break;
 
-      default:
-        url = "etc";
-    } ///////// switch case ///////
+    //   default:
+    //     url = "etc";
+    // } ///////// switch case ///////
 
     // 4. 페이지 이동하기
     if (txt === "ID/PW 회원가입") {
-      location.href = url + ".html";
+      location.href = "join" + ".html";
     } else {
       alert(`${txt} 페이지는 오픈 준비중입니다`);
     }
