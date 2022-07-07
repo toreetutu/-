@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 1. 기본기능막기
     e.preventDefault();
 
-    // 2. 내부 텍스트 읽어오기
+    // 2. 내부 텍스트 읽어오기 + 페이지 이동하기
     let txt = $(this).text().trim();
 
     switch (txt) {
