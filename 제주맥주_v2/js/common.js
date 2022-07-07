@@ -93,7 +93,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // 2. 내부 텍스트 읽어오기
     let txt = $(this).text().trim();
-    console.log("ID/PW 회원가입:", txt);
+
+    switch (txt) {
+      case 'ID/PW 회원가입':
+        location.href = "join" + ".html";
+        break;
+    
+      default:
+        alert(`${txt} 페이지는 오픈 준비중입니다`);
+        break;
+    }
 
     // 3. 분기하기
     // let url;
@@ -107,11 +116,11 @@ window.addEventListener("DOMContentLoaded", () => {
     // } ///////// switch case ///////
 
     // 4. 페이지 이동하기
-    if (txt === "ID/PW 회원가입") {
-      location.href = "join" + ".html";
-    } else {
-      alert(`${txt} 페이지는 오픈 준비중입니다`);
-    }
+    // if (txt === "ID/PW 회원가입") {
+    //   location.href = "join" + ".html";
+    // } else {
+    //   alert(`${txt} 페이지는 오픈 준비중입니다`);
+    // }
 
     return false;
   }); ///// click ////////
@@ -146,6 +155,10 @@ function scAction(seq) { // seq - 순번
   - 스크롤 이벤트값: scrollY
 *********************************************/
 window.addEventListener('scroll', () => {
+
+  let pname = location.pathname.split('/');
+  pname = pname[pname.length - 1];
+  pname = pname.split(".")[0]; 
 
   // 로그인, 회원가입, 갤러리 페이지는 스크롤셋팅 안함!
   if (pname === "login" ||
