@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="btn" type="button" value="호니 잘 가르쳐줘" onclick="hoho()">
+  <div id="pg">호호 포포</div>
+</body> m
+<script>
+  hoho = () => {
+    let num1 = Math.floor(Math.random() * 256)
+    let num2 = Math.floor(Math.random() * 256)
+    let num3 = Math.floor(Math.random() * 256)
+    document.body.style.backgroundColor = `rgb(${num1}, ${num2}, ${num3})`
+    // document.body.style.backgroundColor === "pink" ?
+    // document.body.style.backgroundColor = "lavender" :
+    // document.body.style.backgroundColor = "pink"
+
+    document.querySelector('#btn').value = '포포는 좋은 사람';
+    document.querySelector('#btn').style.color = 'white';
+    document.querySelector('#btn').style.backgroundColor = 'blue';
+
+    const pg = document.querySelector('#pg')
+    pg.innerText = '토리 뚜뚜';
+    pg.style.color = 'white'
+    console.log(pg.style.color)
+    // pg. = 'white'
+  }
+</script>
+</html>
